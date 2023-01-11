@@ -4,7 +4,7 @@
 
 ## Project Demo
 
-- You can see the live demo in [here](https://expenses-tracker-mua.netlify.app)
+- You can see the live demo in [here](https://expenses-tracker-kappa.vercel.app/)
 
 ## Project Preview
 
