@@ -1,0 +1,55 @@
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.expense-form__inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2.4rem;
+  column-gap: 7.2rem;
+}
+
+.expense-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.expense-form__group label {
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.expense-form__group input {
+  border: none;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 1.8rem;
+  padding: 0.4rem 1.2rem;
+  box-shadow: 0;
+
+  transition: all 0.3s;
+}
+
+.expense-form__group input:focus,
+.expense-form__group input:hover,
+.expense-form__group input:active {
+  outline: none;
+  box-shadow: 0 0 1px 5px rgba(255, 255, 255, 0.75);
+  box-shadow: 0 0 1px 5px rgba(34, 139, 230, 0.363);
+}
+
+.expense-form__actions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3.2rem;
+}
+
+.expense-form__btn {
+  font-size: 1.8rem;
+  padding: 0.8rem 1.6rem;
+}

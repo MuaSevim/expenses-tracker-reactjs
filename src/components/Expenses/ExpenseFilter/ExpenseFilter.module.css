@@ -1,0 +1,25 @@
+.form-years {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+
+.form-years label {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.form-years select {
+  font-family: inherit;
+  font-size: 1.8rem;
+  padding: 1.2rem;
+  border: none;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+}
+
+.form-years select:focus {
+  outline: none;
+}

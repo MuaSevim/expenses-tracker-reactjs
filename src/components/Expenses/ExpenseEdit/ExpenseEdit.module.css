@@ -1,0 +1,39 @@
+.edit-form {
+  height: 14rem;
+  color: #fff;
+  padding: 2.4rem;
+
+  display: flex;
+  align-items: center;
+  gap: 5.2rem;
+}
+
+.edit-form__group label {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.edit-form__group input {
+  font-family: inherit;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 0.4rem;
+  border: none;
+  box-shadow: 0;
+  border-radius: 7px;
+
+  transition: all 0.3s;
+}
+
+.edit-form__group input:focus,
+.edit-form__group input:hover,
+.edit-form__group input:active {
+  outline: none;
+  box-shadow: 0 0 1px 5px rgba(255, 255, 255, 0.45);
+}
+
+.edit-form__action {
+  margin-top: 3.2rem;
+}

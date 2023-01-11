@@ -1,0 +1,29 @@
+.expense-item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3.2rem 10rem 1fr 10rem;
+
+  background-color: #1971c2;
+  border-radius: 7px;
+}
+
+.expense-item__info {
+  padding-inline: 1.2rem;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.expense-item__title {
+  color: #fff;
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
+.expense-item__actions {
+  padding-inline: 1.2rem;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}

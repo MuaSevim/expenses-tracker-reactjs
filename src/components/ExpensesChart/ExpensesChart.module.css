@@ -1,0 +1,22 @@
+.expenses-chart {
+  padding-top: 2.4rem;
+  background-color: #fff;
+  background-color: #fff4e6;
+}
+
+.expenses-chart h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.expenses-chart__container {
+  padding: 3.2rem;
+  list-style: none;
+  height: 22rem;
+  margin-bottom: 1.2rem;
+  border-radius: 11px;
+
+  display: flex;
+  justify-content: space-between;
+}

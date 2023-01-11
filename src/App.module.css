@@ -1,0 +1,13 @@
+.container {
+  max-width: 85rem;
+  margin: 6.4rem auto;
+}
+
+.container h1 {
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 3.2rem;
+  letter-spacing: -0.2px;
+  word-spacing: 1px;
+}

@@ -1,0 +1,21 @@
+.expense-form__container {
+  overflow: hidden;
+  border-radius: 7px;
+  background-color: #d0ebff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  padding: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.expense-form__btn-container {
+  padding: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expense-form__btn {
+  color: #333;
+  font-size: 2rem;
+  padding: 0.8rem 1.6rem;
+}
