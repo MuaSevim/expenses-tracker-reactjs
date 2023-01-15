@@ -8,8 +8,15 @@ const ExpenseForm = props => {
   const [enteredTitle, setEnteredTitle] = useState('');
   const [enteredPrice, setEnteredPrice] = useState('');
   const [enteredDate, setEnteredDate] = useState('');
+  const [titleIsValid, setTitleIsValid] = useState(true);
+  const [priceIsValid, setPriceIsValid] = useState(true);
+  const [dateIsValid, setDateIsValid] = useState(true);
+
+  
 
   const titleChangeHandler = e => {
+    if (!e.target.value.length) setTitleIsValid(false);
+    else setTitleIsValid(true);
     setEnteredTitle(e.target.value);
   };
 
