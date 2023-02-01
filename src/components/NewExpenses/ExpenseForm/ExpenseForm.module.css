@@ -53,3 +53,26 @@
   font-size: 1.8rem;
   padding: 0.8rem 1.6rem;
 }
+
+/* VALIDATION */
+
+.expense-form .error {
+  display: none;
+}
+
+.expense-form__invalid {
+  background-color: #db7476d0;
+  border-radius: 11px;
+  padding: 0.4rem;
+  padding-top: 1.6rem;
+}
+
+.expense-form__invalid .error {
+  display: block;
+  text-align: center;
+}
+
+.expense-form__invalid .error p {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
