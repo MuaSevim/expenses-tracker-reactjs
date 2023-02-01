@@ -8,6 +8,7 @@ const ExpenseForm = props => {
   const [enteredTitle, setEnteredTitle] = useState('');
   const [enteredPrice, setEnteredPrice] = useState('');
   const [enteredDate, setEnteredDate] = useState('');
+  const [formIsValid, setFormIsValid] = useState(true);
 
   const titleChangeHandler = e => {
     setEnteredTitle(e.target.value);
@@ -28,21 +29,38 @@ const ExpenseForm = props => {
   const submitHandler = e => {
     e.preventDefault();
 
-    if (!enteredTitle || !enteredPrice || !enteredDate) return;
+    if (!enteredTitle || !enteredPrice || !enteredDate) {
+      setFormIsValid(false);
+      return;
+    }
 
     props.onNewExpense({
       item: enteredTitle,
       price: enteredPrice,
       date: new Date(enteredDate),
     });
-  
+
+    setFormIsValid(true);
     clearInputs(setEnteredTitle);
     clearInputs(setEnteredPrice);
     clearInputs(setEnteredDate);
   };
 
+  const formClass = `${styles['expense-form']} ${
+    !formIsValid ? styles['expense-form__invalid'] : ''
+  }`;
+
+  let seconds = 3;
+  const validationChecker = setTimeout(() => {
+    if (seconds <= 0) clearTimeout(validationChecker);
+    else seconds--;
+  }, 1000);
+
   return (
-    <form className={styles['expense-form']} onSubmit={submitHandler}>
+    <form className={formClass} onSubmit={submitHandler}>
+      <div className={styles['error']}>
+        <p>Make sure you filled the fields properly!</p>
+      </div>
       <div className={styles['expense-form__inputs']}>
         <div className={styles['expense-form__group']}>
           <label>Title</label>
