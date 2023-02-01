@@ -50,12 +50,6 @@ const ExpenseForm = props => {
     !formIsValid ? styles['expense-form__invalid'] : ''
   }`;
 
-  let seconds = 3;
-  const validationChecker = setTimeout(() => {
-    if (seconds <= 0) clearTimeout(validationChecker);
-    else seconds--;
-  }, 1000);
-
   return (
     <form className={formClass} onSubmit={submitHandler}>
       <div className={styles['error']}>
