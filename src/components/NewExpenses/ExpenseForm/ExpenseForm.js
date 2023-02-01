@@ -21,6 +21,10 @@ const ExpenseForm = props => {
     setEnteredDate(e.target.value);
   };
 
+  const clearInputs = setState => {
+    setState('');
+  };
+
   const submitHandler = e => {
     e.preventDefault();
 
@@ -31,10 +35,10 @@ const ExpenseForm = props => {
       price: enteredPrice,
       date: new Date(enteredDate),
     });
-
-    setEnteredTitle('');
-    setEnteredPrice('');
-    setEnteredDate('');
+  
+    clearInputs(setEnteredTitle);
+    clearInputs(setEnteredPrice);
+    clearInputs(setEnteredDate);
   };
 
   return (
@@ -43,6 +47,7 @@ const ExpenseForm = props => {
         <div className={styles['expense-form__group']}>
           <label>Title</label>
           <input
+            className="expense-input"
             type="text"
             placeholder="Enter Title"
             value={enteredTitle}
@@ -52,6 +57,7 @@ const ExpenseForm = props => {
         <div className={styles['expense-form__group']}>
           <label>Price</label>
           <input
+            className="expense-input"
             min="0"
             step="0.01"
             type="number"
@@ -63,6 +69,7 @@ const ExpenseForm = props => {
         <div className={styles['expense-form__group']}>
           <label>Date</label>
           <input
+            className="expense-input"
             min="2020-01-01"
             max="2024-12-31"
             type="date"
