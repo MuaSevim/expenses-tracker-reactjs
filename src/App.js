@@ -40,6 +40,12 @@ const expensesData = [
     price: 23,
     date: new Date(2023, 8, 5),
   },
+    {
+    id: 'e7',
+    item: 'Laundry',
+    price: 22,
+    date: new Date(2023, 7, 20),
+  },
 ];
 
 const App = () => {
